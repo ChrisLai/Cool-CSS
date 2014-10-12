@@ -1,0 +1,66 @@
+<html>
+<head>
+	<style>
+	blockquote{
+	  display:block;
+	  background: #fff;
+	  padding: 15px 20px 15px 45px;
+	  margin: 0 0 20px;
+	  position: relative;
+  
+	  /*Font*/
+	  font-family: Helvetica;
+	  font-size: 20px;
+	  line-height: 1.2;
+	  color: #666;
+	  text-align: justify;
+	  
+	}
+
+	blockquote::before{
+	  content: "\201C"; /*Unicode for Left Double Quote*/
+	  
+	  /*Font*/
+	  font-family: Georgia, serif;
+	  font-size: 60px;
+	  font-weight: bold;
+	  color: #999;
+	  
+	  /*Positioning*/
+	  position: absolute;
+	  left: 10px;
+	  top:5px;
+	}
+
+	blockquote::after{
+	  /*Reset to make sure*/
+	  content: "";
+	}
+	
+	.person{
+		display:block;
+		font-size: 14px;
+	}
+	.person:before{
+		content:'\2014';
+	}
+	.person span{
+		margin-left:5px;
+	}
+	.person a{
+		color:inherit;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<blockquote>
+		<span>
+			Thought a three step process couldn't get any easier. Gulp, here's two step...
+			<div class="person"><span>David Ward</span></div>
+		</span>
+	</blockquote>
+</body>
+</html>
